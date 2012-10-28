@@ -113,16 +113,16 @@ a {
   color: #007edf;
   text-shadow: none;
 
-  transition: color 0.5s ease;
-  transition: text-shadow 0.5s ease;
-  -webkit-transition: color 0.5s ease;
-  -webkit-transition: text-shadow 0.5s ease;
-  -moz-transition: color 0.5s ease;
-  -moz-transition: text-shadow 0.5s ease;
-  -o-transition: color 0.5s ease;
-  -o-transition: text-shadow 0.5s ease;
-  -ms-transition: color 0.5s ease;
-  -ms-transition: text-shadow 0.5s ease;
+  transition: color 0.2s ease;
+  transition: text-shadow 0.2s ease;
+  -webkit-transition: color 0.2s ease;
+  -webkit-transition: text-shadow 0.2s ease;
+  -moz-transition: color 0.2s ease;
+  -moz-transition: text-shadow 0.2s ease;
+  -o-transition: color 0.2s ease;
+  -o-transition: text-shadow 0.2s ease;
+  -ms-transition: color 0.2s ease;
+  -ms-transition: text-shadow 0.2s ease;
 }
 
 #main_content a:hover {
@@ -262,6 +262,37 @@ img {
   max-width: 100%;
 }
 
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
 /*******************************************************************************
 Full-Width Styles
 *******************************************************************************/
@@ -290,36 +321,67 @@ Full-Width Styles
   padding: 50px 10px 30px 10px;
 }
 
-#project_title {
+header h1 {
   margin: 0;
-  color: #fff;
-  font-size: 42px;
+  color: #f6f6f6;
   font-weight: 700;
-  text-shadow: #111 0px 0px 10px;
+  text-shadow: 0px 0px 10px #111;
+  background: url('../images/logo.png') no-repeat;
+  background-position: 0 0;
+  padding: 13px 0 0 143px;
+  height: 126px;
+  min-width: 280px;
+  line-height: 45px;
+}
+header h1 .top_line{
+  font-size: 45px;
+}
+header h1 .bottom_line{
+  font-size: 48px;
 }
 
-#project_tagline {
-  color: #fff;
-  font-size: 24px;
-  font-weight: 300;
-  background: none;
-  text-shadow: #111 0px 0px 10px;
+nav a{
+  padding: 0 20px 0 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+nav a:last-child{
+  padding: 0;
+  font-weight: 700;
+  float: right;
 }
 
-#main_content_wrap {
+#main_content {
   background: #f2f2f2;
   border-top: 1px solid #111;
   border-bottom: 1px solid #111;
 }
 
-#main_content {
-  padding-top: 40px;
+#main_content section{
+  padding: 0 0 10px;
 }
 
 #footer_wrap {
   background: #212121;
 }
 
+/**
+Sections
+**/
+#mission img{
+  width: 220px;
+  height: 150px;
+  background-color: #ddd;
+  float: left;
+  margin-right: 15px;
+}
+#team img{
+  width: 150px;
+  height: 150px;
+  background-color: #ddd;
+  float: left;
+  margin-right: 15px;
+}
 
 
 /*******************************************************************************
@@ -338,10 +400,6 @@ Small Device Styles
   .inner {
     min-width: 320px;
     max-width: 480px;
-  }
-
-  #project_title {
-  font-size: 32px;
   }
 
   h1 {
