@@ -1,11 +1,4 @@
 /*******************************************************************************
-Slate Theme for Github Pages
-by Jason Costello, @jsncostello
-*******************************************************************************/
-
-@import url(pygment_trac.css);
-
-/*******************************************************************************
 MeyerWeb Reset
 *******************************************************************************/
 
@@ -305,7 +298,7 @@ Full-Width Styles
 
 .inner {
   position: relative;
-  max-width: 640px;
+  max-width: 700px;
   padding: 20px 10px;
   margin: 0 auto;
 }
@@ -363,9 +356,8 @@ header h1 .bottom_line{
   font-size: 20px;
   font-weight: 600;
 }
-#main_content nav a:last-child{
+#main_content nav a.donate{
   padding: 0;
-  font-weight: 700;
   float: right;
 }
 
@@ -384,6 +376,9 @@ Sections
   width: 280px;
   float: left;
   margin-right: 15px;
+}
+#mission .mini_mission{
+  font-size: 18px;
 }
 #team img{
   width: 150px;
