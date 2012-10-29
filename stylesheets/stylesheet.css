@@ -369,9 +369,7 @@ nav a:last-child{
 Sections
 **/
 #mission img{
-  width: 220px;
-  height: 150px;
-  background-color: #ddd;
+  width: 250px;
   float: left;
   margin-right: 15px;
 }
