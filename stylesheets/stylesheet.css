@@ -153,6 +153,14 @@ img {
   -ms-box-shadow: 0 0 5px #ebebeb;
 }
 
+iframe {
+  padding: 5px;
+  margin: 10px 0 10px 0;
+  border: 1px solid #ebebeb;
+  box-shadow: 0 0 5px #ebebeb;
+  background: white;
+}
+
 pre, code {
   width: 100%;
   color: #222;
@@ -255,6 +263,12 @@ form {
 img {
   width: 100%;
   max-width: 100%;
+}
+
+sup {
+  font-size: 60%;
+  vertical-align: top;
+  line-height: 1;
 }
 
 /*
