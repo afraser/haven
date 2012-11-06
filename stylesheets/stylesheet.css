@@ -319,7 +319,7 @@ Full-Width Styles
 
 #header_wrap {
   background-color: #212121;
-  background-image: url('../images/banner.jpg');
+  background-image: url('../images/banner2.jpg');
   background-repeat: no-repeat;
   background-position: center;
   height: 210px;
@@ -381,7 +381,7 @@ header h1 .bottom_line{
 
 #footer_wrap {
   background-color: #212121;
-  background-image: url('../images/banner.jpg');
+  background-image: url('../images/banner2.jpg');
   background-repeat: no-repeat;
   background-position: center 5px;
 }
