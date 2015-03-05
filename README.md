@@ -1,4 +1,3 @@
-# haven
-Chris Haven Foundation
+# Chris Haven Foundation
 
 http://afraser.github.io/haven
